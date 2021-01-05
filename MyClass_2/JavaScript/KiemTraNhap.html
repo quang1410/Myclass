@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form name="form1" action="abc.php" method="get">
+		<p> Nhập Tên: <input type="text" name="username" id="username"> </p>
+		<p>Nhập Địa Chỉ:<input type="text" name="diachi" id="diachi"></p>
+		<p>Nhập Số Điện Thoại:<input type="text" name="sdt" id="sdt"></p>
+		<p>Nhập Email:<input type="email" name="eml" id="eml"></p>
+		<input type="submit" value="Gửi" onClick=" return KiemTraNhap()">
+		<input type="button" value="Kiểm tra kí tự Địa chỉ" onClick="return Kiemtratatcakitu('diachi')" >
+		<input type="button" value="Kiểm tra SDT" onClick="return Kiemtratatcalaso('sdt')" >
+		<input type="button" value="Kiểm tra Email" onClick="return KiemtraEmailHopLe('eml')" >
+		<input type="button" value="Kiểm tra Độ dài tên" onClick="return Kiemtradodaichuoi('username',8,12)" >
+	</form>
+		<p id="thongbao"></p>
+		<p id="thongbao1"></p>
+	<script>
+		function KiemTraNhap(){
+			var inputten=document.form1.username;
+			var inputten1=document.form1.diachi;
+			var inputten2=document.form1.sdt;
+			var inputten3=document.form1.eml;
+			var giatriten=inputten.value;
+			var giatriten1=inputten1.value;
+			var giatriten2=inputten2.value;
+			var giatriten3=inputten3.value;
+			var thep=document.getElementById("thongbao");
+			if(giatriten=="" || giatriten1=="" ||giatriten2=="" ||giatriten3==""){
+				thep.style.display="block";
+				thep.innerHTML="Hãy nhập vào giá trị";
+				thep.style.color="red";
+				return false;
+			}
+			else{
+				thep.style.display="none";
+				return true;
+			}
+		}
+		
+		function Kiemtratatcakitu(idtag){
+			var inputtag =document.getElementById("diachi");
+			var letters= /^[A-Za-z]+$/;
+			var thep=document.getElementById("thongbao1");
+			if(inputtag.value.match(letters)){
+				thep.style.display="none";
+				return true;
+			}
+			else{
+				thep.style.display="block";
+				thep.innerHTML="hãy nhập tất cả địa chỉ là kí tự";
+				thep.style.color="red";
+				return false;
+			}
+		}
+		
+		function Kiemtratatcalaso(idtag){
+			var inputtag =document.getElementById("sdt");
+			var numbers= /^[0-9]+$/;
+			var thep=document.getElementById("thongbao1");
+			if(inputtag.value.match(numbers)){
+				thep.style.display="none";
+				return true;
+			}
+			else{
+				thep.style.display="block";
+				thep.innerHTML="hãy nhập tất cả là số điện thoại là số";
+				thep.style.color="red";
+				return false;
+			}
+		}
+		
+		function KiemtraEmailHopLe(idtag){
+			var inputtag =document.getElementById("eml");
+			var emails= /^([\W\.])+@([a-zA-Z0-9\-])+\.([a-zA-Z]{2,4})(\.[a-zA-Z]{2,4})?$/;
+			var thep=document.getElementById("thongbao1");
+			if(inputtag.value.match(emails)){
+				thep.style.display="none";
+				return true;
+			}
+			else{
+				thep.style.display="block";
+				thep.innerHTML="hãy nhập email hợp lệ";
+				thep.style.color="red";
+				return false;
+			}
+		}
+		
+		function Kiemtradodaichuoi(idtag,minlength,maxlength){
+			var inputtag =document.getElementById("username");
+			var strings=inputtag.value;
+			var thep=document.getElementById("thongbao1");
+			if(strings.length<minlength || strings.length>maxlength){
+				thep.style.display="block";
+				thep.innerHTML="Độ dài tên từ 8 đến 12 kí tự";
+				thep.style.color="red";
+				return false;
+			}
+			else{
+				thep.style.display="none";
+				return true;
+			}
+		}
+	</script>
+</body>
+</html>

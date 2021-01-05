@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Ví dụ bật tắt Bóng Đèn</h1>
+	<br>
+	<img id="light" src="OFFbulb.jpg" onClick="changeimg()" >
+	<p>Click vào bóng đèn để Bật và Tắt nó</p>
+	
+	<script>
+		function changeimg(){
+			var image=document.getElementById("light");
+			if(image.src.match("OFF")){
+				image.src="ONbulb.jpg";
+			}
+			else{
+				image.src="OFFbulb.jpg";
+			}
+		}
+	</script>
+</body>
+</html>

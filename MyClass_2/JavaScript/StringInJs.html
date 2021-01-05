@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<script>
+		// Tìm vị trí đầu tiên của chuỗi 
+		var chuoi="hệ thống khóa học myclass.vn";
+		document.write("vị trí xuất hiện chuỗi myclass.vn là: " + chuoi.indexOf("myclass.vn")+"<br>");
+		
+		//Tìm vị trí xuất hiện cuối cùng của chuỗi
+		var chuoi1="hệ thống khóa học myclass.vn - làm các dự án thực tiễn tại myclass.vn"
+		document.write("vị trí xuất hiện cuối cùng của chuỗi myclass.vn là: "+chuoi1.lastIndexOf("myclass.vn")+"<br>")
+		
+		//Tìm vị trí chuỗi sử dụng search
+		var chuoi="hệ thống khóa học myclass.vn";
+		document.write("vị trí xuất hiện chuỗi myclass.vn là: " + chuoi.search("myclass.vn")+"<br>");
+		
+		//Cắt chuỗi với slice
+		var chuoi2="xin chào các bạn đến hệ thống myclass.vn";
+		document.write("chuỗi sau khi cắt là: " +chuoi2.slice(30,40)+"<br>");
+		
+		//Truyền vào âm với slice
+		var chuoi2="xin chào các bạn đến hệ thống myclass.vn";
+		document.write("chuỗi sau khi cắt là: " +chuoi2.slice(-12,40)+"<br>");
+		
+		//Chỉ truyền vào một tham số với slice
+		var chuoi2="xin chào các bạn đến hệ thống myclass.vn";
+		document.write("chuỗi sau khi cắt là: " +chuoi2.slice(35)+"<br>");
+		
+		//Cắt chuỗi với substring
+		var chuoi2="xin chào các bạn đến hệ thống myclass.vn";
+		document.write("chuỗi sau khi cắt là: " +chuoi2.substring(23,35)+"<br>");
+		
+		//Cắt chuỗi với substr
+		var chuoi2="xin chào các bạn đến hệ thống myclass.vn";
+		document.write("chuỗi sau khi cắt là: " +chuoi2.substr(23,5)+"<br>");
+		
+		//Tìm kiếm và thay thế
+		//replace(str_find,str_replace)
+		var chuoi3 ="Welcome to itclass.vn";
+		document.write(chuoi3.replace("itclass.vn","myclass.vn"));
+		
+		//chuyển hoa thường 
+		//toUpperCase():chuyển sang hoa
+		//toLowerCase():chuyển sang chữ thường
+	</script>
+</body>
+</html>

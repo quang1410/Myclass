@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<div id="container">
+		Xin chào tất cả các bạn đến với trang web của chúng tôi
+	</div>
+	<input type="button" value="Thay đổi nền" onClick="ChangeBackground()">
+	<br>
+	<br>
+	<input type="button" value="Thay đổi màu chữ" onClick="ChangeColor()">
+	<br>
+	<br>
+	<input type="button" value="Thay đổi cỡ chữ" onClick="ChangeFont()">
+	<br>
+	<br>
+	<input type="button" value="Thay đổi khoảng cách trên" onClick="ChangeMargin()">
+	<script>
+		function ChangeBackground(){
+			document.getElementById("container").style.background="yellow";
+		}
+		
+		function ChangeColor(){
+			document.getElementById("container").style.color="red";
+		}
+		
+		function ChangeFont(){
+		 document.getElementById("container").style.fontSize="30px";
+		}
+		
+		function ChangeMargin(){
+			document.getElementById("container").style.marginTop="50px";
+		}
+	</script>
+</body>
+</html>

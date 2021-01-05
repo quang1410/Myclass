@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title> Bài tập thực hành về HTML FORM</title>
+	</head>
+	<body>
+		<div id="container">
+			<form action="abc.php" method="post" style="width:500px ; margin:10px auto;height:1000px;background: #cecbcb; border-radius: 10px;padding: 10px;padding-left:60px;padding-right: 60px">
+				<h1 style="text-align:center"> SIGN UP </h1>
+				<span style="display: inline-block;background: #3fa39a;color: white;padding: 10px;border-radius: 100%;font-size: 21px">1</span><span style="font-size:20px;font-weight:bold">Your basic infor</span>
+				<br>
+				<span style="font-size:20px">Name:</span>
+				<br>
+				<input type="text" name="username" placeholder="Input your username" style="margin-top:20px;margin-bottom:20px;font-size:20px;width: 100%;padding-top: 10px;padding-bottom: 10px;padding-left: 10px"></input>
+				<br>
+				<span style="font-size:20px">Email:</span>
+				<br>
+				<input type="text" name="Email" placeholder="Input your Email" style="margin-top:20px;margin-bottom:20px;font-size:20px;width: 100%;padding-top: 10px;padding-bottom: 10px;padding-left: 10px"></input>
+				<br>
+				<span style="font-size:20px">Password:</span>
+				<br>
+				<input type="password" name="username" placeholder="Input your password " style="margin-top:20px;margin-bottom:20px;font-size:20px;width: 100%;padding-top: 10px;padding-bottom: 10px;padding-left: 10px"></input>
+				<br>
+				<span style="font-size:20px">Age:</span>
+				<br>
+				<input type="radio" value="Under13" name="age user" style="font-size:25px">Under 13</input>
+				<br>
+				<input type="radio" value="Over13" name="age user" style="font-size:25px">13 or Older</input>
+				<br>
+				<br>
+				<br>
+				<br>
+				<span style="display: inline-block;background: #3fa39a;color: white;padding: 10px;border-radius: 100%;font-size: 21px">2</span><span style="font-size:20px;font-weight:bold">Your profile</span>
+				<br>
+				<br>
+				<span style="font-size:20px">Biography:</span>
+				<br>
+				<textarea id="bio" placeholder="Input your bio" cols="70" rows="6"></textarea>
+				<br>
+				<br>
+				<br>
+				<span style="font-size:20px">Job Role:</span>
+				<br>
+				<select id="jobrole" name="jod">
+					<optgroup label="WED">
+						<option value="frontend_developer">Front-end Developer</option>
+						<option value="php_developer">PHP Developer</option>
+						<option value="python_developer">Python Developer</option>
+						<option value="rails_developer">Rails Developer</option>
+						<option value="wordpress_developer">WordPress Developer</option>
+					<optgroup>	
+					<optgroup label="MOBLE">
+						<option value="android_developer">Android Developer</option>
+						<option value="ios_developer">IOS Developer</option>
+						<option value="mobile_designer">MOBLE Designer</option>
+					</optgroup>
+					<optgroup label="BUSINESS">
+						<option value="business_owner">Business Owner</option>
+						<option value="freelancer">Freelancer</option>
+					</optgroup>
+					<optgroup label="OTHER">
+						<option value="secretary">Secretary</option>
+						<option value="teacher">Teacher</option>
+					</optgroup>
+				</select>
+				<br>
+				<br>
+				<span style="font-size:20px">Interests:</span>
+				<br>
+				<input type="checkbox" value="test1" name="CBX">Developer</input>
+				<br>
+				<input type="checkbox" value="test2" name="CBX">BUSINESS</input>
+				<br>
+				<input type="checkbox" value="test3" name="CBX">Designer</input>
+				<br>
+				<input type="submit" value="Sign Up Now" style="padding: 20px; width: 100%;font-size: 20px;color: red;background: floralwhite;border-radius: 10px"></input>
+			</form>
+		</div>
+	</body>
+<html>

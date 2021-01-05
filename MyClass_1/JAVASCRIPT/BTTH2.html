@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Bài tập tổng hợp về Javascript</title>
+		<link rel="stylesheet" type="text/css" href="BTTH2.css">
+		<script type="text/javascript" src="BTTH2.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<a id="dangki" href="#" class="tab" onclick="onDangKi()">Đăng Kí</a>
+			<a id="dangnhap" href="#" class="tab" onclick="onDangNhap()">Đăng Nhập</a>
+			<div id="divdangki" class="classform">
+				<form name="FDK" action="#">
+					<h2>ĐĂNG KÍ THÀNH VIÊN</h2><br>
+					<hr style="width:80%">
+					<div id="thongbao">
+						<p id="pthongbao"></p>
+					</div>
+					<table>
+						<tr>
+							<td class="form1">
+								Tên Đăng Nhập :
+							</td>
+							<td>
+								<input type="text" id="tendangnhap" name="tendangnhap">
+							</td>
+						</tr>
+						<tr>
+							<td class="form1">
+								Mật Khẩu :
+							</td>
+							<td>
+								<input type="password" id="Matkhau"  name="matkhau">
+							</td>
+						</tr>
+						<tr>
+							<td class="form1">
+								Email:
+							</td>
+							<td>
+								<input type="email" id="email"  name="email"  placeholder="me@example.com">
+							</td>
+						</tr>
+						<tr>
+							<td class="form1">
+								Nghề Nghiệp:
+							</td>
+							<td>
+								<select id="nghenghiep" >
+									<option> Vui lòng chọn</option>
+									<option> Bác Sĩ</option>
+									<option> Kỹ Sư</option>
+									<option> Lập Trình Viên</option>
+									<option>Kế Toán</option>
+									<option>Giảng Viên</option>
+									<option> Công Nhân</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="form1">
+									Tuổi:
+							</td>
+							<td>
+								<input type="text" id="tuoi" name="tuoi">
+							</td>
+						</tr>
+						<tr>
+							<td class="form1">
+								Giới Tính:
+							</td>
+							<td>
+								<input type="radio" id="Nam" name="Gioitinh">Nam
+								<input type="radio" id="Nu" name="Gioitinh">Nữ
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input type="submit" value="Đăng Kí" id="dangki1" onclick="return ktdangki()" >
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center ; padding-left:20px">
+								Bạn đã có tài khoản ? Vui lòng click <a href="#" onclick="onDangNhap()" style="text-decoration:none ;color:red;">Đăng Nhập</a>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="divdangnhap" class="classform">
+				<form name="FDN" action="#">
+					<h2>ĐĂNG NHẬP</h2><br>
+					<hr style="width:80%">
+					<table>
+						<tr>
+							<td class="form2">
+								Tên Đăng Nhập :
+							</td >
+							<td>
+								<input type="text" id="tendangnhap1">
+							</td>
+						</tr>
+						<tr>
+							<td class="form2">
+								Mật Khẩu :
+							</td>
+							<td >
+								<input type="text" id="Matkhau1" >
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input type="checkbox"  id="ghinhomatkhau" > Ghi nhớ mật khẩu
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								Bạn quên  <a href="#"  style="text-decoration:none ;color:red;">Mật Khẩu</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input type="submit" value="Đăng Nhập" id="dangnhap1" >
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center ; padding-left:20px">
+								Bạn chưa có tài khoản ? Vui lòng click <a href="#" onclick="onDangKi()" style="text-decoration:none ;color:red;">Đăng Kí</a>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

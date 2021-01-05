@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Số dòng:<input type="text" id="sodong"/>
+        <br>
+        Số cột:<input type="text" id="socot"/>
+        <br>
+        <input type="button" value="Tạo table động" onclick=" return TaoTable()"/>
+    </form>
+    <div id="container"></div>
+    <script type="text/javascript">
+        function TaoTable(){
+          var sodongId=document.getElementById("sodong");
+          var socotId=document.getElementById("socot");                    
+          if(isNaN(sodongId.value)||isNaN(socotId.value)){
+            alert("NHap vao so dòng và cột");
+            return flase;
+          }else{
+            var divId=document.getElementById("container");
+            var soDong=parseInt(sodongId.value);
+            var soCot=parseInt(socotId.value);
+            var tagTable=document.createElement("table");
+              tagTable.border=1;
+            for(i=0;i<soDong;i++){
+              //tạo thẻ dòng
+              var tagTR=document.createElement("tr");
+              tagTable.appendChild(tagTR);
+              for(j=0;j<soCot;j++)
+                {
+                  var tagTD=document.createElement("td");
+                  var textNode=document.createTextNode("ô"+i+","+j);
+                  tagTD.appendChild(textNode);
+                  tagTR.appendChild(tagTD);
+                }
+            }
+            divId.appendChild(tagTable);
+            return true;
+        }
+     </script>
+</body>
+</html>

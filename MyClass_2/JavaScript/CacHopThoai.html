@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+	
+	//Các hộp thoại trong javascript
+	//1.Hộp thoại cảnh báo (Alert Box)
+	//2.Hộp thoại xác nhận (Confirm Box)
+	//3.Hộp thoại Nhập liệu (Prompt Box)
+	
+	function Xuatthongbao(){
+		alert("xin chào các bạn");
+	}
+	
+	function XacNhan(){
+		var xacnhan1;
+		xacnhan1=confirm("bạn đã đánh giá khóa học này chưa ?");
+		if(xacnhan1){
+			document.write("Xin cảm ơn các bạn ");
+		}
+		else{
+			document.write("vui lòng click và đánh giá khóa học");
+		}
+	}
+	
+	function Nhapdulieu(){
+		var ten;
+		ten=prompt("Vui lòng nhập vào họ và tên: ");
+		document.write(ten);
+	}
+</script>
+</head>
+
+<body>
+	
+	<input type="button" value="thông báo" onClick="Xuatthongbao()">
+	<br>
+	<br>
+	<input type="button" value="xác nhận" onClick="XacNhan()">
+	<br>
+	<br>
+	<input type="button" value="Nhập dữ liệu" onClick="Nhapdulieu()">
+</body>
+</html>

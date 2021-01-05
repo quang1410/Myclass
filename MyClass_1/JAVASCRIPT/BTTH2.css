@@ -1,0 +1,64 @@
+#container{
+	width:500px;
+	height:100%;
+	margin:0 auto;
+	background:#a9e2ea;
+}
+.tab{
+	text-decoration:none;
+	background:#FFEB3B;
+	padding:10px;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline-block;
+	width: 150px;
+    text-align: center;
+	    margin-left: 10px;
+}
+#dangnhap{
+	background: #df6056;
+}
+a.tab:hover{
+	background:#c9d1d8 !important; 
+}
+#divdangnhap{
+	width:500px;
+	height:100%;
+	margin:0 auto;
+	display:none;
+}
+#divdangki{
+	width:500px;
+	height:100%;
+	margin:0 auto;
+}
+h2{
+	text-align:center;
+}
+.form1{
+	padding-left:20px;
+}
+#dangki1{
+	padding: 10px;
+    background: #ccb9bf;
+	cursor:pointer;
+}
+#dangki1:hover{
+	background:#c9d1d8 !important; 
+}
+.form2{
+	padding-left:20px;
+}
+#dangnhap1{
+	padding: 10px;
+    background: #ccb9bf;
+	cursor:pointer;
+}
+#dangnhap1:hover{
+	background:#c9d1d8 !important; 
+}
+#pthongbao{
+	color:red;
+	text-align:center;
+	display:none;
+}

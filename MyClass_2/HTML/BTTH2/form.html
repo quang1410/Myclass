@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML FORM</title>
+</head>
+
+<body>
+	<div id="container">
+		<form action="abc.php" method="post" style="width:60%;margin:10px auto;background-color:#cecbcb ;border-radius: 10px;padding-left: 60px;padding-right: 60px;padding: 10px;height: 1000px">
+		<h1 align="center">SIGN UP</h1>
+		<span style="display: inline-block;background: #3fa39a;color: white;padding: 10px;border-radius: 100%;font-size: 21px"> 1</span>
+		<span style="font-size:20px;font-weight:bold">Your basic info</span>
+		<br>
+		<span style="font-size:20px">NAME:</span>
+		<br>
+		<input type="text" name="username" placeholder="Input your name" style="margin-top:20px;margin-bottom:20px;font-size:20px;width: 90%;padding-top: 10px;padding-bottom: 10px;padding-left: 10px">
+		<br>
+		<span style="font-size:20px">EMAIL:</span>
+		<br>
+		<input type="text" name="email" placeholder="Input your email" style="margin-top:20px;margin-bottom:20px;font-size:20px;width: 90%;padding-top: 10px;padding-bottom: 10px;padding-left: 10px">
+		<br>
+		<span style="font-size:20px">PASSWORD:</span>
+		<br>
+		<input type="password" name="password" placeholder="Input your password" style="margin-top:20px;margin-bottom:20px;font-size:20px;width: 90%;padding-top: 10px;padding-bottom: 10px;padding-left: 10px">
+		<br>
+		<span style="font-size:20px">AGE:</span>
+		<br>
+		<input type="radio" value="under13" name="age" style="font-size:25px">Dưới 13
+		<br>
+		<input type="radio" value="older 13" name="age" style="font-size:25px">Trên 13
+		<br>
+		<span style="display: inline-block;background: #3fa39a;color: white;padding: 10px;border-radius: 100%;font-size: 21px">2</span>
+		<span style="font-size:20px;font-weight:bold">Your profile</span>
+		<br>
+		<span style="font-size:20px">BIOGRAPHY:</span>
+		<br>
+		<textarea name="bio" placeholder="Input you bio" cols="70" rows="6"></textarea>
+		<br>
+		<span style="font-size:20px">JOB ROLE</span>
+		<br>
+		<select id="jobrole" name="job">
+			<optgroup label="WEB">
+				<option value="1">Front-end Developer</option>
+				<option value="2">PHP- Developer</option>
+				<option value="3">Python- Developer</option>
+				<option value="4">Rails Developer</option>
+				<option value="5">WordPress Developer</option>
+			</optgroup>
+			<optgroup label="MOBLE">
+				<option value="1">Android Developer</option>
+				<option value="2">IOS Developer</option>
+				<option value="3">MOBLE Designer</option>
+				
+			</optgroup>
+			<optgroup label="BUSINESS">
+				<option value="1">Business Owner</option>
+				<option value="2">Freelancer</option>
+				
+			</optgroup>
+			<optgroup label="OTHER">
+				<option value="1">Secretary</option>
+				<option value="2">Teacher</option>
+			</optgroup>
+		</select>
+		<br>
+		<br>
+		<span style="font-size:20px">INTEREST:</span>
+		<br>
+		<input type="checkbox" value="t1" name="cbx">Developer
+		<br>
+		<input type="checkbox" value="t2" name="cbx">Business
+		<br>
+		<input type="checkbox" value="t3" name="cbx">Designer
+		<br>
+		<input type="submit" value="Sign Up Now" style="padding: 20px; width: 100%;font-size: 20px;color: red;background: floralwhite;border-radius: 10px">
+		</form>
+	</div>
+</body>
+</html>

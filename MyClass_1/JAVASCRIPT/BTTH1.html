@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+    <form action="#">
+        số a:<input type="text" id="soa"/>
+        <br>
+        số b:<input type="text" id="sob"/>
+        <br>
+        kết quả:<input type="text" id="kq"/>
+        <br>
+        <input type="button" value="tinhtong" onclick=" return TinhTong()"/>
+    </form>
+    <script type="text/javascript">
+        function TinhTong(){
+          var soa=document.getElementById("soa");
+          var sob=document.getElementById("sob");
+          var kq=document.getElementById("kq");
+          
+          if(isNaN(soa.value)||isNaN(sob.value)){
+            alert("NHap vao so a và b");
+            return flase;
+          }else{
+            soa=parseInt(soa.value);
+            sob=parseInt(sob.value);
+            var tong=soa+sob;
+            kq.value=tong;
+            return true;
+          }
+           
+        }
+     </script>
+</body>
+</html>

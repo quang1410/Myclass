@@ -1,0 +1,15 @@
+
+#container{
+		    background:green;
+			width:800px;
+			height:800px;
+			border: solid;
+		 }
+		 .myclass{
+		 text-align:center;
+		 color:black;
+		 }
+		 h2{
+		 text-align:center;
+		 color:blue;
+		 }

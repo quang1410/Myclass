@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+body{
+	margin: 0px;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.top{
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	
+}
+.giohang{
+	float: right;
+	color: white;
+	padding-top: 10px;
+	text-align: center;
+}
+.giohang p{
+	margin-top: 2px;
+	padding: 0;
+}
+.giohang a:link , .giohang a:visited {
+	color: white;
+	text-decoration: none;
+}
+.logo a:link {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+.logo{
+	border-bottom: solid 1px #575152;
+}
+#divleft{
+	width: 70%;
+	height: 70px;
+	float: left;
+}
+#divright{
+	width: 30%;
+	height: 70px;
+	float: left;
+	position: relative;
+}
+.list li{
+	list-style-type: none;
+	float: left;
+	padding-left: 50px;
+	font-weight: bold;
+	font-size: 20px
+}
+.list a:link {
+	color: black;
+	text-decoration: none;
+}
+#btsearch{
+	background:url("image/Capture123.PNG") no-repeat 0px 0px ;
+	display: inline-block;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-top: 50px;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	right: 40%;
+	top:5px;
+}
+.search1{
+	position: relative;
+	float: right;
+	padding-top: 8px;
+}
+#bttext{
+	padding: 13px;
+	border: 0;
+	
+}
+.menu{
+	padding-top: 15px;
+}
+.bnr img{
+	width: 100%;
+}
+.sptieubieu{
+	float: left;
+	width: 30%;
+	padding-left: 39px;
+	padding-top: 30px;
+}
+.sptieubieu img{
+	width: 100%;
+	height: 250px;
+}
+.dmsp{
+	float: left;
+	width: 20%;
+	height: 310px;
+	border: solid 1px #E3D6D6;
+	margin-right: 2px;
+	margin-left: 40px;
+	margin-top: 80px;
+	padding-left: 12px;
+}
+.thongtinsp{
+	text-align: center;
+}
+.gia{
+	font-size: 20px;
+}
+.info{
+	width: 25%;
+	height: auto;
+	padding-top: 80px;
+	text-align:left;
+	float: left;
+}
+.info h3{
+	padding-left: 40px;
+}
+.info li {
+	list-style-type: none
+}
+.info ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px
+}
+.social img{
+	width: 30px;
+	height: 30px;
+}
+.childfooter{
+	float:left;
+	width: 50%;
+	height: 80px;
+	padding-top: 50px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+#divright1{
+	padding: 10px;
+}
+#divright2{
+	padding: 10px;
+}

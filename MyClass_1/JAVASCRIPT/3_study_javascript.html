@@ -1,0 +1,27 @@
+<!--Cách hiển thị ra màn hình trong JavaScript-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  
+  <h1 style="color:red; font-size:50px" id="h" >Xin chào các bạn</h1>
+  <h2 id="chao" style="color:blue"></h2>
+  
+  <script>
+    //Cách hiển thị dữ liệu ra màn hình trong JavaScript
+    //1) Sử dụng alert()
+      //alert("Xin chào các bạn")
+    //2) Sử dụng document.write()
+      document.write("<h1>Xin chào các bạn </h1>");
+    //3) Sử dụng document.getElementById().innerHTML
+      document.getElementById("chao").innerHTML="xin chào các bạn nhé";
+     
+  </script>
+  <button style="button" onclick="document.write('hello các bạn')">Click here</button>
+  
+</body>
+</html>

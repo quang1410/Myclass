@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form>
+		Số Dòng: <input type="text" id="soa">
+		<br>
+		Số Cột: <input type="text" id="sob">
+		<br>
+		<input type="button" value="Create Table" onClick="TinhTong()">
+	</form>
+	<br>
+	<div id="container"></div>
+	<script>
+		function TinhTong(){
+			var sodongid=document.getElementById("soa");
+			 var socotid=document.getElementById("sob");
+			
+			if(isNaN(soa.value)|| isNaN(sob.value)){
+				alert("Nhập vào số");
+				return false;
+			}
+			else{
+				//tạo Table//
+				var divid=document.getElementById("container");
+				var sodong=parseInt(sodongid.value);
+				var
+				socot=parseInt(socotid.value);
+				var tagTable=document.createElement("table");
+				tagTable.border=1;
+				for(i=0;i<sodong;i++)
+					{
+						var tagTR=document.createElement("tr");
+						tagTable.appendChild(tagTR);
+						for(j=0;j<socot;j++)
+							{
+								var tagTD=document.createElement("td");
+								var textNode=document.createTextNode("o"+i+","+j);
+								tagTD.appendChild(textNode);
+								tagTR.appendChild(tagTD);
+							}
+					}
+				divid.appendChild(tagTable);
+				return true;
+			}
+			
+		}
+	</script>
+</body>
+</html>

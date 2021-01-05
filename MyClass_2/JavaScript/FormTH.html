@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bài Tập Tổng Hợp Về Javascript</title>
+<link rel="stylesheet" href="styleTH.css" type="text/css">
+<script type="text/javascript" src="JS_TH.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<a id="dangki" class="tab" href="#" onClick="Ondangki()">ĐĂNG KÍ</a>
+		<a id="dangnhap" class="tab" href="#" onClick="Ondangnhap()">ĐĂNG NHẬP</a>
+		<div id="divdangki" class="divform">
+			<form name="frmdangki" action="trangchu.php">
+				<h2>Đăng Kí Thành Viên</h2>
+				<hr>
+				<div id="divthonbao">
+					<p id="pthongbao"></p>
+				</div>
+				<table align="center">
+					<tr>
+						<td class="form1">Tên Đăng Nhập:</td>
+						<td><input type="text" id="tendangnhap" maxlength="30"></td>
+					</tr>
+					<tr>
+						<td class="form1">Mật Khẩu:</td>
+						<td><input type="password" id="matkhau"></td>
+					</tr>
+					<tr>
+						<td class="form1">Email:</td>
+						<td><input type="email" id="email" placeholder="example@email.com"></td>
+					</tr>
+					<tr>
+						<td class="form1">Nghề Nghiệp:</td>
+						<td><select id="nghenghiep">
+									<option>Vui lòng chọn</option>
+									<option>Bác sĩ</option>
+									<option>Kĩ sư</option>
+									<option>Giáo viên</option>
+									<option>Công Nhân</option>
+									<option>Nông Dân</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="form1">Tuổi:</td>
+						<td ><input type="text" id="tuoi" ></td>
+					</tr>
+					<tr>
+						<td class="form1">Giới Tính:</td>
+						<td><input type="radio" name="gioitinh" id="nam">Nam
+							<input type="radio" name="gioitinh" id="nu">Nữ
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="submit1">
+							<input type="submit" id="submit" value="ĐĂNG KÍ" Onclick="return kiemtra() ">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="form1">
+							<p>Bạn chưa đã có tài khoản ? <a href="#" onClick="Ondangnhap()" class="tab1">ĐĂNG NHẬP</a></p>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+		<div id="divdangnhap" class="divform">
+			<form name="frmdangnhap" action="trangchu.php">
+				<h2>Đăng NHẬP</h2>
+				<hr>
+				<table align="center">
+					<tr>
+						<td class="form1">Tên Đăng Nhập:</td>
+						<td><input type="text" name="tendangnhap"></td>
+					</tr>
+					<tr>
+						<td class="form1">Mật Khẩu:</td>
+						<td><input type="password" name="matkhaudn"></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="form1"><input type="checkbox" name="ghinho">Ghi nhớ mật khẩu</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="form1"><p>Bạn quên <a href="#" class="tab1">Mật Khẩu</a></p></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="submit1" >
+							<input type="submit" name="dangnhap1" value="ĐĂNG NHẬP">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="form1">
+							<p>Bạn chưa có tài khoản.Hãy <a href="#" onClick="Ondangki()" class="tab1">ĐĂNG KÍ</a></p>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
