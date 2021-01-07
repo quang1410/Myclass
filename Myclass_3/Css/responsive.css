@@ -1,0 +1,44 @@
+/* mobile and tablet */
+@media (max-width:1023px){
+    .root{
+        --header-height:68px;
+	    --navbar-height:0px;
+    }
+    .header-with-search{
+        height: 70px;
+    }
+    .header{
+        height: 70px;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    
+
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+
+    .header-cart {
+        width: 80px;
+        text-align: right;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .cart-notice{
+        right: -18px;
+    }
+}
+
+/* mobile */
+@media (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+}
