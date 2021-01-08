@@ -721,6 +721,19 @@
     display: none;
  }
 
+.header-search-mobile{
+ display: none;
+}
+
+.header__search-checkbox:checked ~ .header-search{
+    display: flex;
+}
+
+.header-search-mobile-icon{
+   color: #fff;
+   font-size: 2.6rem;
+}
+
  .header__sort-items{
      list-style: none;
      flex: 1;
