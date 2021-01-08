@@ -9,6 +9,7 @@
 	--navbar-height:24px;
 	--header-with-search-height:calc(var(--header-height) - var(--navbar-height));
 	--star-color:#FFEE00;
+	--header-sort-bar-height:46px;
 }
 
 *{
