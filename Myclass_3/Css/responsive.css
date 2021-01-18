@@ -36,6 +36,14 @@
     .header__sort-bar{
         display: flex;
     }
+
+    .grid-padding-top{
+        padding-top: 8px;
+    }
+
+    .mobile-category{
+        display: block;
+    }
 }
 
 /* tablet */
@@ -110,5 +118,24 @@
 
     .header-search-mobile{
         display: block;
+    }
+
+    .footer__content{
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .footer__download{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__download-apps{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-download-app{
+        /* padding: 6px 8px; */
     }
 }
