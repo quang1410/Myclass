@@ -10,13 +10,15 @@ html{
 }
 
 #main{
-
 }
 
 /* Css for header */
 #header{
     height: 46px;
     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #nav{
@@ -30,6 +32,62 @@ html{
     font-size: 1.4em;
     display: block;
     line-height: 46px;
+    padding: 0 24px;
+}
+
+.nav-item{
+    position: relative;
+}
+
+.nav-link:hover{
+    background-color: #ccc;
+}
+
+.nav-item:hover .subnav{
+    display: block;
+}
+
+.subnav{
+    min-width: 160px;
+    height: 114px;
+    background-color:#fff;
+    position: absolute;
+    display: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.subnav-item{
+    list-style: none;
+}
+
+.subnav-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 8px 22px;
+    display: block;
+}
+
+.subnav-link:hover{
+    background-color: #ccc;
+}
+
+.nav-search{
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-search:hover{
+    background-color:red;
+}
+
+.nav-icon{
+    color: #fff;
     padding: 0 24px;
 }
 /* /Css for header */
