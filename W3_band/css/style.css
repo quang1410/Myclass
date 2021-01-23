@@ -19,6 +19,11 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 #nav{
@@ -80,6 +85,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .nav-search:hover{
@@ -94,7 +100,47 @@ html{
 
 /* Css for slider */
 #slider{
+    margin-top: 46px;
+    /* padding-top: 50%; */
+    /* background-image: url('/W3_band/images/ny.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+#slider > .slider-images{
+    width: 100%;
+    height: 100%;
+}
+
+#slider > .slider-images > img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.slider-title{
+    color: #fff;
+    padding: 8px 0;
+}
+
+.slider-sciption{
+    color: #fff;
+    padding: 8px 0;
 }
 /* /Css for slider */
 
