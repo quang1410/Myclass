@@ -157,6 +157,7 @@ html{
     padding: 64px 16px;
 }
 
+/* the band */
 .section-heading{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -176,7 +177,135 @@ html{
 .about-text{
      text-align: justify;
      line-height: 1.5;
+     display: block;
 }
+
+.band-images{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.name-images{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.name-images span{
+    margin: 15px 0;
+}
+
+.name-images img{
+    width: 60%;
+    border-radius: 2px;
+}
+/* /the band */
+
+/* Tour dates */
+.tour-section{
+    background-color: #000;
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+.tour-sell-ticket{
+    background: #fff;
+    margin-top: 40px;
+    border: solid 1px #ccc;
+}
+
+.tour-sell-ticket li{
+    padding:16px;
+    border-bottom:solid 1px #ccc;
+    color: #757575;
+    list-style: none;
+}
+
+.tour-sell-ticket li:last-child{
+    border-bottom: none;
+}
+
+.tour-sell-ticket .ticket-sold-out{
+    background-color: #f44336;
+    padding: 3px 6px;
+    margin-left: 10px;
+}
+
+.tour-sell-ticket .ticket-number{
+    float:right;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: relative;
+    top: -2px;
+}
+
+.list-tour{
+    display: flex;
+    margin: 32px -8px 0;
+}
+
+.list-tour img{
+    width: 100%;
+}
+
+.list-tour img:hover{
+    opacity: 0.7;
+}
+
+.list-item{
+    margin: 0 8px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.list-item-content{
+    margin: 0 16px;
+}
+
+.list-item-content h3,
+.list-item-content span,
+.list-item-content p{
+    padding: 15px 0;
+}
+
+.list-item-content h3{
+    font-weight: 500;
+}
+
+.list-item-content span{
+    color: #8b8b8b;
+}
+
+.list-item-content p{
+    line-height: 20px;
+}
+
+.list-item-content button{
+    display: block;
+    border: none;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    width: 60%;
+    margin-bottom: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.list-item-content button:hover{
+    background: #ccc;
+    color: #000;
+    font-weight: 300;
+}
+/* /Tour dates */
+
 /* /Css for content */
 
 /* Css for footer */
