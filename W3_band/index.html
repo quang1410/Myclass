@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="main">
@@ -129,6 +130,26 @@
                     </div>
                 </div>
             </div>
+            <div class="modal">
+                <div class="modal-ticket">
+                    <div class="modal-heading">
+                        <h3 class="modal-ticket-heading"><i class="fas fa-briefcase" style="margin-right: 20px;"></i>TICKETS</h3>
+                        <i class="far fa-times-circle modal-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <span><i class="fas fa-shopping-cart"></i> Tickets, $15 per person</span>
+                        <input type="text" placeholder="How Many?">
+                        <span><i class="fas fa-user"></i> Send To</span>
+                        <input type="email" placeholder="Email">
+                        <button type="button" class="modal-btn-pay">PAY</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="modal-btn-close modal-close">Close <i class="fas fa-times"></i></button>
+                        <p>Need <a href="#">help?</a></p>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="content-section">
                 <!-- CONTACT -->
@@ -141,5 +162,15 @@
 
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $(".btn-tour").click(function(){
+                $(".modal").fadeIn();
+            });
+            $(".modal-close").click(function(){
+                $(".modal").fadeOut();
+            })
+        });
+    </script>
 </body>
 </html>
