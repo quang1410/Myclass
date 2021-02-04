@@ -1,7 +1,7 @@
 /*Chèn Fontawesome dô nghen:  https://kit.fontawesome.com/a076d05399.js*/
 
 var input = document.querySelector('.pswrd');
-var show = document.querySelector('.show');
+var show = document.querySelector(".show");
 show.addEventListener('click', active);
 function active(){
     if(input.type === "password"){
