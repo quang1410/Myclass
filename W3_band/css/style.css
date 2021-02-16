@@ -16,7 +16,7 @@ html{
 /* Css for header */
 #header{
     height: 46px;
-    background-color: #000;
+    background-color:rgba(255,255 ,255,0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +33,7 @@ html{
 }
 
 .nav-link{
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     font-size: 1.4em;
     display: block;
@@ -101,7 +101,7 @@ html{
 
 /* Css for slider */
 #slider{
-    margin-top: 46px;
+    /* margin-top: 46px; */
     /* padding-top: 50%; */
     /* background-image: url('/W3_band/images/ny.jpg');
     background-position: top center;
