@@ -4,43 +4,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <div id="main">
         <div id="header">
-            <ul id="nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Band</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Tour</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">More <i class="fas fa-caret-down"></i></a>
-                    <ul class="subnav">
-                        <li class="subnav-item">
-                            <a href="" class="subnav-link">Merchandise</a>
-                        </li>
-                        <li class="subnav-item">
-                            <a href="" class="subnav-link">Extras</a>
-                        </li>
-                        <li class="subnav-item">
-                            <a href="" class="subnav-link">Media</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                <div class="logo">
+                    <span>LOGO</span>
+                </div>
+                <ul id="nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Band</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">More <i class="fas fa-caret-down"></i></a>
+                        <ul class="subnav">
+                            <li class="subnav-item">
+                                <a href="" class="subnav-link">Merchandise</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="" class="subnav-link">Extras</a>
+                            </li>
+                            <li class="subnav-item">
+                                <a href="" class="subnav-link">Media</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             <div class="nav-search">
                 <i class="fas fa-search nav-icon"></i>
+            </div>
+            <div class="menu-icon-mobile">
+                <i class="fas fa-bars" id="icon-mobile"></i>
             </div>
         </div>
 
@@ -196,6 +204,19 @@
                 $(".modal").fadeOut();
             })
         });
+    </script>
+    <script>
+        var menu_icon = document.getElementById("icon-mobile");
+            menu_icon.onclick= function(){
+            var List_mobile = document.getElementById("nav");
+            var height_header =document.getElementById("header");
+            if(List_mobile.style.display=="block"){
+                List_mobile.style.display="none";
+            }
+            else{
+                List_mobile.style.display="block";
+            }
+        }
     </script>
 </body>
 </html>
